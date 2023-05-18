@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="imagenes/lgo the store.webp" alt="TheStore Logo"> 
+      </div>
+    
+      <div class="form-container">
+        <form action="submit_new_product.php" method="post"> 
+          <input type="text" name="name" placeholder="Name" required> 
+          <input type="number" name="price" placeholder="Price" step="0.01" min="0" required> 
+          <input type="number" name="inventory" placeholder="Inventory" min="0" required> 
+          <input type="submit" value="Create Product"> 
+        </form>
+      </div>
+</body>
+</html>
