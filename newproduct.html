@@ -32,10 +32,19 @@
       </div>
     
       <div class="form-container">
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Name" aria-label="Name" required>
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Price" step="0.01" min="0" aria-label="Price"  required>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Inventory" step="0.01" min="0" requerid aria-label="Inventory"  required>
+              </div>
+          </div>
         <form action="submit_new_product.php" method="post"> 
-          <input type="text" name="name" placeholder="Name" required> 
-          <input type="number" name="price" placeholder="Price" step="0.01" min="0" required> 
-          <input type="number" name="inventory" placeholder="Inventory" min="0" required> 
+          
           <input type="submit" value="Create Product"> 
         </form>
       </div>
